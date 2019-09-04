@@ -1,0 +1,172 @@
+#app .content-container .row.content {
+  height: 620px;
+}
+#app .content-container .row.content .left {
+  width: 278px;
+  height: 100%;
+  float: left;
+  position: relative;
+  background-color: #fff;
+}
+#app .content-container .row.content .left .header {
+  border-bottom: 2px solid #ddd;
+  height: 48px;
+  line-height: 48px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #418041;
+}
+#app .content-container .row.content .left .header .icon {
+  position: relative;
+  display: inline-block;
+  top: 2px;
+  width: 34px;
+  height: 14px;
+}
+#app .content-container .row.content .left .header .icon.icon-left {
+  background: url(../images/img_bg_right.png) no-repeat;
+  margin-right: 8px;
+}
+#app .content-container .row.content .left .header .icon.icon-right {
+  background: url(../images/img_bg_left.png) no-repeat;
+  margin-left: 8px;
+}
+#app .content-container .row.content .left ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#app .content-container .row.content .left ul li {
+  height: 60px;
+  line-height: 60px;
+  border-left: 2px solid transparent;
+}
+#app .content-container .row.content .left ul li .icon {
+  position: relative;
+  display: inline-block;
+  width: 17px;
+  height: 16px;
+  margin-right: 8px;
+  top: 2px;
+}
+#app .content-container .row.content .left ul li .icon.icon-exe {
+  background: url(../images/icon_ruanjiangongju_nor.png);
+}
+#app .content-container .row.content .left ul li .icon.icon-doc {
+  background: url(../images/icon_changyongwendang_nor.png);
+}
+#app .content-container .row.content .left ul li .icon.icon-other {
+  background: url(../images/icon_qita_nor.png);
+}
+#app .content-container .row.content .left ul li a {
+  color: #000;
+}
+#app .content-container .row.content .left ul li.active {
+  border-left: 3px solid #418041;
+  background-color: #b7dbb7;
+}
+#app .content-container .row.content .left ul li.active .icon-exe {
+  background: url(../images/icon_ruanjiangongju_sel.png);
+}
+#app .content-container .row.content .left ul li.active .icon-doc {
+  background: url(../images/icon_changyongwendang_sel.png);
+}
+#app .content-container .row.content .left ul li.active .icon-other {
+  background: url(../images/icon_qita_sel.png);
+}
+#app .content-container .row.content .left ul li:hover {
+  background-color: #b7dbb7;
+}
+#app .content-container .row.content .left ul li:hover .icon-exe {
+  background: url(../images/icon_ruanjiangongju_sel.png);
+}
+#app .content-container .row.content .left ul li:hover .icon-doc {
+  background: url(../images/icon_changyongwendang_sel.png);
+}
+#app .content-container .row.content .left ul li:hover .icon-other {
+  background: url(../images/icon_qita_sel.png);
+}
+#app .content-container .row.content .right {
+  width: 890px;
+  height: 100%;
+  float: right;
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+  overflow-y: auto;
+}
+#app .content-container .row.content .right .tab-content {
+  display: none;
+}
+#app .content-container .row.content .right .tab-content.active {
+  display: block;
+}
+#app .content-container .row.content .right .tab-content ul {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+#app .content-container .row.content .right .tab-content ul.item-list {
+  padding: 0 15px;
+}
+#app .content-container .row.content .right .tab-content ul.item-list li {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #ddd;
+}
+#app .content-container .row.content .right .tab-content ul.item-list li .item-icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 64px;
+  height: 64px;
+  background: url(../images/icon-app-default.png) no-repeat;
+  margin-top: 18px;
+}
+#app .content-container .row.content .right .tab-content ul.item-list li .item-icon.icon-1 {
+  background: url(../images/img_1.png) no-repeat;
+}
+#app .content-container .row.content .right .tab-content ul.item-list li .item-icon.icon-2 {
+  background: url(../images/img_2.png) no-repeat;
+}
+#app .content-container .row.content .right .tab-content ul.item-list li .item-content {
+  height: 64px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 18px;
+}
+#app .content-container .row.content .right .tab-content ul.item-list li .item-content .item-content-row {
+  max-width: 500px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+#app .content-container .row.content .right .tab-content ul.item-list li .item-content .item-content-row .title {
+  margin-right: 8px;
+}
+#app .content-container .row.content .right .tab-content ul.item-list li .item-content .item-content-row .tag {
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 2px 4px;
+  color: #999;
+}
+#app .content-container .row.content .right .tab-content ul.item-list li .item-content .item-content-row .detail {
+  color: #999;
+}
+#app .content-container .row.content .right .tab-content ul.item-list li .item-download {
+  position: absolute;
+  right: 12px;
+  top: 36px;
+  padding: 2px 12px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  color: #418041;
+}
+#app .content-container .row.content .right .tab-content ul.item-list li .item-download:hover {
+  border-color: #418041;
+}

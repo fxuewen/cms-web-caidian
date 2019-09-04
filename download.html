@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>蔡甸检察院</title>
+    <link href="./css/header.css" rel="stylesheet" type="text/css" />
+    <link href="./css/footer.css" rel="stylesheet" type="text/css" />
+    <link href="./css/common.css" rel="stylesheet" type="text/css" />
+    <link href="./css/download.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <include src="./templates/header.html"></include>
+      <div class="content-container">
+        <div class="row content">
+          <div class="left tab-title">
+            <div class="header"><span class="icon icon-left"></span>下载中心<span class="icon icon-right"></span></div>
+            <ul>
+              <li class="active"><span class="icon icon-exe"></span><a href="#">软件下载</a></li>
+              <li><span class="icon icon-doc"></span><a href="#">常用文档</a></li>
+              <li><span class="icon icon-other"></span><a href="#">其它软件</a></li>
+            </ul>
+          </div>
+          <div class="right tab-list">
+            <div class="tab-content active">
+              <ul class="item-list">
+                <li>
+                  <span class="item-icon icon-1"></span>
+                  <div class="item-content">
+                    <div class="item-content-row top">
+                      <span class="title">安全换机</span> <span class="tag">安全</span> <span class="tag">杀毒</span>
+                    </div>
+                    <div class="item-content-row">
+                      <span class="detail">360安全卫士是一款由奇虎360公司推出的功能强、效果好、受欢迎的杀毒软件</span>
+                    </div>
+                  </div>
+                  <a class="item-download">下载</a>
+                </li>
+                <li>
+                  <span class="item-icon icon-2"></span>
+                  <div class="item-content">
+                    <div class="item-content-row top">
+                      <span class="title">安全换机</span> <span class="tag">安全</span> <span class="tag">杀毒</span>
+                    </div>
+                    <div class="item-content-row">
+                      <span class="detail">360安全卫士是一款由奇虎360公司推出的功能强、效果好、受欢迎的杀毒软件</span>
+                    </div>
+                  </div>
+                  <a class="item-download">下载</a>
+                </li>
+                <li>
+                  <span class="item-icon"></span>
+                  <div class="item-content">
+                    <div class="item-content-row top">
+                      <span class="title">安全换机</span> <span class="tag">安全</span> <span class="tag">杀毒</span>
+                    </div>
+                    <div class="item-content-row">
+                      <span class="detail">360安全卫士是一款由奇虎360公司推出的功能强、效果好、受欢迎的杀毒软件</span>
+                    </div>
+                  </div>
+                  <a class="item-download">下载</a>
+                </li>
+                <li>
+                  <span class="item-icon"></span>
+                  <div class="item-content">
+                    <div class="item-content-row top">
+                      <span class="title">安全换机</span> <span class="tag">安全</span> <span class="tag">杀毒</span>
+                    </div>
+                    <div class="item-content-row">
+                      <span class="detail">360安全卫士是一款由奇虎360公司推出的功能强、效果好、受欢迎的杀毒软件</span>
+                    </div>
+                  </div>
+                  <a class="item-download">下载</a>
+                </li>
+                <li>
+                  <span class="item-icon"></span>
+                  <div class="item-content">
+                    <div class="item-content-row top">
+                      <span class="title">安全换机</span> <span class="tag">安全</span> <span class="tag">杀毒</span>
+                    </div>
+                    <div class="item-content-row">
+                      <span class="detail">360安全卫士是一款由奇虎360公司推出的功能强、效果好、受欢迎的杀毒软件</span>
+                    </div>
+                  </div>
+                  <a class="item-download">下载</a>
+                </li>
+                <li>
+                  <span class="item-icon"></span>
+                  <div class="item-content">
+                    <div class="item-content-row top">
+                      <span class="title">安全换机</span> <span class="tag">安全</span> <span class="tag">杀毒</span>
+                    </div>
+                    <div class="item-content-row">
+                      <span class="detail">360安全卫士是一款由奇虎360公司推出的功能强、效果好、受欢迎的杀毒软件</span>
+                    </div>
+                  </div>
+                  <a class="item-download">下载</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content">
+              其它软件
+              <ul class="item-list"></ul>
+            </div>
+            <div class="tab-content">
+              常用文档
+              <ul class="item-list"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <include src="./templates/footer.html"></include>
+    </div>
+    <script src="./js/include.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/default.js"></script>
+    <script>
+      $(function() {
+        // 绑定点击事件
+        $('.tab-title>ul>li').click(function() {
+          $(this)
+            .addClass('active')
+            .siblings()
+            .removeClass('active');
+          //获取选中元素的下标
+          var index = $(this).index();
+          $('.tab-content')
+            .removeClass('active')
+            .eq(index)
+            .addClass('active');
+        });
+      });
+    </script>
+  </body>
+</html>

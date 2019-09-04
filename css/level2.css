@@ -1,0 +1,70 @@
+#app .breadcrumb {
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+  margin: 16px 0;
+  background-color: #fff;
+  font-size: 12px;
+}
+#app .breadcrumb .icon {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 24px;
+  top: 3px;
+}
+#app .content-container {
+  overflow: hidden;
+}
+#app .content-container .side {
+  float: left;
+  width: 258px;
+  height: 544px;
+  background-color: #fff;
+  text-align: center;
+}
+#app .content-container .side .header {
+  border-bottom: 2px solid #ddd;
+  height: 48px;
+  line-height: 48px;
+  margin-bottom: 16px;
+  border-top: 2px solid #418041;
+  color: #418041;
+  font-weight: bolder;
+}
+#app .content-container .side ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#app .content-container .side ul li {
+  height: 60px;
+  line-height: 60px;
+  border-left: 2px solid transparent;
+}
+#app .content-container .side ul li.active {
+  border-left: 3px solid #418041;
+  background-color: #b7dbb7;
+}
+#app .content-container .side ul li:hover {
+  background-color: #b7dbb7;
+}
+#app .content-container .side ul li a {
+  color: #000;
+}
+#app .content-container .main {
+  float: right;
+  width: 854px;
+  background-color: #fff;
+  padding: 12px 32px;
+  min-height: 520px;
+}
+#app .content-container .main .content .news-list .news-item {
+  height: 42px;
+  line-height: 42px;
+  border-bottom: 1px solid #ddd;
+}
+#app .content-container .main .content .pagination {
+  margin-top: 60px;
+}
