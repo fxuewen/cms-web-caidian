@@ -1,0 +1,12 @@
+.footer-container {
+  height: 80px;
+  border-top: 4px green solid;
+  margin-top: 12px;
+  font-size: 12px;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.footer-container .address {
+  padding: 16px 0;
+}

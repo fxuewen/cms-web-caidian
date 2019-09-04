@@ -1,0 +1,286 @@
+#app .content-container {
+  width: 1184px;
+}
+#app .content-container .section1 {
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+#app .content-container .section1 .card {
+  float: left;
+}
+#app .content-container .section1 .card-left {
+  width: 34%;
+}
+#app .content-container .section1 .card-center {
+  width: 33%;
+  background-color: transparent;
+}
+#app .content-container .section1 .card-center #banner {
+  position: relative;
+  width: 94%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  overflow: hidden;
+}
+#app .content-container .section1 .card-center #banner .banner-bg {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #000;
+  height: 30px;
+  line-height: 30px;
+  filter: alpha(opacity=30);
+  opacity: 0.7;
+  z-index: 1000;
+  cursor: pointer;
+}
+#app .content-container .section1 .card-center #banner .banner-bg .banner-info {
+  height: 22px;
+  color: #fff;
+  max-width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  margin-left: 5px;
+  z-index: 1001;
+}
+#app .content-container .section1 .card-center #banner ul {
+  position: absolute;
+  list-style-type: none;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+  z-index: 1002;
+  margin: 0;
+  padding: 0;
+  bottom: 3px;
+  right: 5px;
+}
+#app .content-container .section1 .card-center #banner ul li {
+  padding: 0px 8px;
+  float: left;
+  display: block;
+  color: #fff;
+  background: #6f4f67;
+  cursor: pointer;
+  border: 1px solid #333;
+}
+#app .content-container .section1 .card-center #banner .banner ul li.on {
+  background-color: #000;
+}
+#app .content-container .section1 .card-center #banner .banner_list a {
+  position: absolute;
+}
+#app .content-container .section1 .card-right {
+  width: 33%;
+}
+#app .content-container .section-devide {
+  width: 100%;
+}
+#app .content-container .section-devide img {
+  width: 100%;
+}
+#app .content-container .section2 {
+  position: relative;
+  overflow: hidden;
+  height: 632px;
+  margin: 8px 0;
+}
+#app .content-container .section2 .section-left {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 28%;
+  height: 100%;
+  background-color: #fff;
+}
+#app .content-container .section2 .section-left .row {
+  overflow: hidden;
+  margin-top: 8px;
+  text-align: center;
+}
+#app .content-container .section2 .section-left .row .col-2 {
+  position: relative;
+  background-color: #f1fcf6;
+  width: 48%;
+  height: 44px;
+  padding: 6px 0;
+}
+#app .content-container .section2 .section-left .row .col-2.active {
+  color: #40a271;
+  font-weight: bold;
+}
+#app .content-container .section2 .section-left .row .col-2.left {
+  float: left;
+}
+#app .content-container .section2 .section-left .row .col-2.right {
+  float: right;
+}
+#app .content-container .section2 .section-left .row-btn {
+  display: block;
+  margin-top: 12px;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  background-color: #dff3e8;
+  color: #379e69;
+  font-weight: bold;
+  border: 1px solid #a8d7bf;
+  border-radius: 24px;
+  cursor: pointer;
+}
+#app .content-container .section2 .section-right {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 72%;
+  height: 100%;
+}
+#app .content-container .section2 .section-right .row {
+  position: relative;
+  overflow: hidden;
+}
+#app .content-container .section2 .section-right .row .card {
+  width: 49%;
+}
+#app .content-container .section2 .section-right .row .card-left {
+  float: left;
+  margin-left: 8px;
+}
+#app .content-container .section2 .section-right .row .card-right {
+  float: right;
+}
+#app .content-container .section3 {
+  position: relative;
+  overflow: hidden;
+  margin: 8px 0;
+}
+#app .content-container .section3 .section-left {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 28%;
+  height: 100%;
+  background-color: #fff;
+}
+#app .content-container .section3 .section-left .card.top .row {
+  height: 70px;
+  margin-top: 16px;
+}
+#app .content-container .section3 .section-left .card.top .row .item-icon {
+  width: 90px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+#app .content-container .section3 .section-left .card.top .row .item-icon img {
+  height: 100%;
+}
+#app .content-container .section3 .section-left .card.top .row .item-content {
+  width: 200px;
+  height: 64px;
+  margin-left: 8px;
+  float: right;
+  text-align: left;
+  position: relative;
+}
+#app .content-container .section3 .section-left .card.top .row .item-content .content-title {
+  font-weight: bolder;
+}
+#app .content-container .section3 .section-left .card.top .row .item-content .content-item {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.8;
+}
+#app .content-container .section3 .section-left .card.top .row .item-content .content-item .content-item-icon {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  padding-right: 2px;
+  background: url(../images/ul_li.png) no-repeat;
+}
+#app .content-container .section3 .section-left .card.middle .row {
+  overflow: hidden;
+  margin-top: 8px;
+  text-align: center;
+}
+#app .content-container .section3 .section-left .card.middle .row.first {
+  margin-top: 20px;
+}
+#app .content-container .section3 .section-left .card.middle .row .col-2 {
+  position: relative;
+  background-color: #e6f3ec;
+  border: 1px solid #a8d7bf;
+  font-size: 17px;
+  font-weight: bold;
+  width: 48%;
+  height: 36px;
+  padding: 7px 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+#app .content-container .section3 .section-left .card.middle .row .col-2 .icon {
+  position: relative;
+  top: 4px;
+  width: 30px;
+  height: 30px;
+}
+#app .content-container .section3 .section-left .card.middle .row .col-2 .text {
+  position: relative;
+  top: -4px;
+  color: #333;
+}
+#app .content-container .section3 .section-left .card.middle .row .col-2.left {
+  float: left;
+}
+#app .content-container .section3 .section-left .card.middle .row .col-2.right {
+  float: right;
+}
+#app .content-container .section3 .section-left .card.bottom .row {
+  width: 288px;
+  height: 36px;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#app .content-container .section3 .section-left .card.bottom .row select {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  z-index: 11;
+}
+#app .content-container .section3 .section-left .card.bottom .row .icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url(../images/arrow-down.png) no-repeat center;
+  background-color: #ddd;
+  border: 1px solid gray;
+  z-index: 9;
+}
+#app .content-container .section3 .section-right {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 72%;
+}
+#app .content-container .section3 .section-right .row {
+  position: relative;
+  overflow: hidden;
+}
+#app .content-container .section3 .section-right .row .card {
+  width: 49%;
+}
+#app .content-container .section3 .section-right .row .card-left {
+  float: left;
+  margin-left: 8px;
+}
+#app .content-container .section3 .section-right .row .card-right {
+  float: right;
+}

@@ -1,0 +1,239 @@
+@width: 1184px;
+@navColor: #379e69;
+@hoverColor: #379e69;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-width: @width;
+  font-size: 14px;
+}
+
+body {
+  background: url(../images/bg.png) no-repeat top center;
+  background-size: 100%;
+  background-color: #e6f3f3;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+
+  &:visited {
+    color: #000;
+  }
+
+  &:active {
+    color: #000;
+  }
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#app {
+  min-height: 100%;
+  width: @width;
+  margin: 0 auto;
+
+  .content-container {
+    position: relative;
+    margin-top: 12px;
+  }
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  height: 312px;
+  background-color: #fff;
+}
+
+.row-devide {
+  height: 8px;
+}
+
+.tabs-container {
+  position: relative;
+  margin: 12px;
+  box-sizing: border-box;
+
+  .tabs-header {
+    @tabHeight: 34px;
+    height: @tabHeight;
+    line-height: @tabHeight;
+    border-bottom: 1px solid @navColor;
+    font-size: 16px;
+
+    .tabs-item {
+      display: inline-block;
+      height: @tabHeight;
+      line-height: @tabHeight;
+      padding: 0 24px;
+      cursor: pointer;
+      color: @navColor;
+      border: 1px solid @navColor;
+      border-bottom: none;
+
+      &.active {
+        background-color: @navColor;
+        color: #fff;
+      }
+
+      .tabs-item-icon {
+        position: relative;
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-image: url(../images/nav_icon.png);
+        margin-right: 6px;
+        top: -2px;
+      }
+    }
+
+    &.blank {
+      background: url(../images/tab_blank.png) no-repeat top left;
+      .tabs-item {
+        border: none;
+        &.active {
+          background-color: transparent;
+        }
+      }
+    }
+
+    &.blank1 {
+      background: url(../images/tab_blank1.png) no-repeat top left;
+
+      .tabs-item {
+        border: none;
+        &.active {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  .tabs-content {
+    padding: 6px 0;
+
+    .tabs-pane {
+      display: none;
+
+      .more {
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        font-size: 14px;
+        cursor: pointer;
+        z-index: 1;
+
+        &:hover {
+          color: @hoverColor;
+          text-decoration: underline;
+        }
+
+        &.highlight {
+          color: @hoverColor;
+          font-size: 16px;
+        }
+      }
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+
+.news-list {
+  margin: 0;
+  padding: 0;
+
+  .news-item {
+    height: 36px;
+    line-height: 36px;
+    position: relative;
+
+    .item-icon {
+      position: relative;
+      float: left;
+      top: 15px;
+      width: 8px;
+      height: 8px;
+      background: url(../images/ul_li.png) no-repeat;
+    }
+
+    .text {
+      display: inline-block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 76%;
+      margin-left: 6px;
+      cursor: pointer;
+
+      &:hover {
+        color: @hoverColor;
+        text-decoration: underline;
+      }
+    }
+
+    .time {
+      position: absolute;
+      right: 0;
+      color: #999;
+    }
+  }
+}
+
+.pagination {
+  position: relative;
+  bottom: 32px;
+  text-align: right;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+
+    li {
+      display: inline-block;
+
+      a {
+        color: black;
+        float: left;
+        padding: 4px 12px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        border: 1px solid #ddd;
+
+        &.active {
+          background-color: #42a0f8;
+          color: white;
+          border: 1px solid #42a0f8;
+        }
+      }
+    }
+  }
+
+  .record {
+    display: inline-block;
+    position: relative;
+    top: -8px;
+    padding-left: 12px;
+
+    span {
+      padding-left: 12px;
+    }
+  }
+}
